@@ -28,7 +28,7 @@ Rails.application.configure do
   config.assets.css_compressor = Tailwindcss::Compressor.new(
     files_with_class_names: Rails.root.glob("app/views/**/*.*") +
       Rails.root.glob("app/helpers/**/*.rb") +
-      Rails.root.glob("app/javascripts/**/*.js")
+      Rails.root.glob("app/javascript/**/*.js")
   )
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
